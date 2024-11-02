@@ -1,13 +1,17 @@
 import Button from "./Button";
 import heroImage from "../assets/restauranfood.jpg";
+import "./css/Hero.css";
 function Hero() {
   return (
-    <section>
-      <div>
+    <section className="hero">
+      <div className="flex container hero-wrapper">
         {/* Left */}
-        <div>
-          <h1>Little Lemon</h1>
-          <h3>Chicago</h3>
+        <div className="hero-left">
+          <div>
+            {" "}
+            <h1>Little Lemon</h1>
+            <h3>Chicago</h3>
+          </div>
           <p>
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.

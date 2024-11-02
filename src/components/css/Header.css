@@ -1,0 +1,28 @@
+/* Mobile */
+
+.main-navigation {
+  display: none;
+}
+
+/* Desktop */
+
+@media (min-width: 950px) {
+  .main-navigation {
+    display: block;
+  }
+
+  .mobile-hamburger {
+    display: none;
+  }
+
+  .basket {
+    display: none;
+  }
+
+  .navigation {
+    list-style: none;
+    gap: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+}

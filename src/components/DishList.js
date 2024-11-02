@@ -27,7 +27,7 @@ const dishes = [
 ];
 function DishList() {
   return (
-    <ul>
+    <ul className="dishes flex">
       {dishes.map((dish) => (
         <SingleDish
           img={dish.img}

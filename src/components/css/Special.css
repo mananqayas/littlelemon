@@ -1,0 +1,20 @@
+.special {
+  padding: 4rem 1rem;
+}
+.special-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.dishes {
+  list-style: none;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+@media (min-width: 781px) {
+  .dishes {
+    flex-direction: row;
+  }
+}

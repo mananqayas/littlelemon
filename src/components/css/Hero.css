@@ -1,0 +1,31 @@
+.hero {
+  background: var(--primary-1);
+  color: white;
+  padding: 3rem 1rem;
+}
+.hero h1 {
+  color: var(--primary-2);
+}
+.hero-wrapper {
+  gap: 2rem;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.hero img {
+  border-radius: 3rem;
+  margin-bottom: -8rem;
+  max-height: 26rem;
+  object-fit: cover;
+}
+
+@media (min-width: 540px) {
+  .hero {
+    margin-bottom: 6rem;
+  }
+}
