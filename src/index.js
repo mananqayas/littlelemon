@@ -8,6 +8,8 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import BookingPage from "./pages/BookingPage";
+import Counter from "./components/Counter";
+import ThankYou from "./pages/ThankYou";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -27,6 +29,24 @@ const router = createBrowserRouter([
       <>
         <Header />
         <BookingPage />
+      </>
+    ),
+  },
+  {
+    path: "/counter",
+    element: (
+      <>
+        <Header />
+        <Counter />
+      </>
+    ),
+  },
+  {
+    path: "/thankyou",
+    element: (
+      <>
+        <Header />
+        <ThankYou />
       </>
     ),
   },

@@ -1,0 +1,43 @@
+.booking {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+form {
+  max-width: 36rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: "Karla", sans-serif;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0.4rem;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--primary-2);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+label {
+  font-weight: bold;
+}
+.reserve-btn {
+  background-color: var(--primary-1);
+  cursor: pointer;
+}
+input {
+  padding: 0.75rem 1rem;
+}
+
+select {
+  padding: 1rem;
+}
