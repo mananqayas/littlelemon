@@ -1,13 +1,39 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import App from "./App";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import BookingPage from "./pages/BookingPage";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <>
+        <Header />
+        <Home />
+      </>
+    ),
+  },
+  {
+    path: "/bookingpage",
+    element: (
+      <>
+        <Header />
+        <BookingPage />
+      </>
+    ),
+  },
+]);
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

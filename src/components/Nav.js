@@ -2,6 +2,8 @@ import logo from "../assets/Logo.svg";
 import "./css/Header.css";
 import hamburger from "../assets/hamburger.svg";
 import basket from "../assets/Basket.svg";
+import { Link } from "react-router-dom";
+
 function Nav() {
   return (
     <div className="container flex content-between">
@@ -9,9 +11,9 @@ function Nav() {
       <span className="mobile-hamburger flex">
         <img src={hamburger} alt="hambarger" />
       </span>
-      <a href="/">
+      <Link to="/">
         <img src={logo} alt="Little Lemon Logo" />{" "}
-      </a>
+      </Link>
       <nav role="list" className="main-navigation flex">
         <ul className="flex navigation">
           <li>HOME</li>
