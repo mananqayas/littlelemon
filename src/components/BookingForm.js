@@ -120,6 +120,9 @@ function BookingForm() {
             <option>Birthday</option>
             <option>Anniversary</option>
           </select>
+          {errors.occasion && touched.occasion && (
+            <div style={{ color: "red" }}>{errors.occasion}</div>
+          )}
         </div>
         <button type="submit">Make a Reservation</button>
       </form>
