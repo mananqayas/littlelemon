@@ -21,7 +21,7 @@ const ReservationSchema = Yup.object().shape({
   occasion: Yup.string().required("Occasion is required"),
 });
 
-function BookingForm() {
+function BookingForm2() {
   const navigate = useNavigate();
   const onSubmit = (values) => {
     console.log(values);
@@ -126,4 +126,4 @@ function BookingForm() {
     </div>
   );
 }
-export default BookingForm;
+export default BookingForm2;

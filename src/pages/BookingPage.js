@@ -1,6 +1,10 @@
 import BookingForm from "../components/BookingForm";
 
 function BookingPage() {
-  return <BookingForm />;
+  return (
+    <>
+      <BookingForm />
+    </>
+  );
 }
 export default BookingPage;

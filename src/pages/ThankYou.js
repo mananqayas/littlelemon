@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import confetti from "../assets/images/confetti.gif";
 function ThankYou() {
   return (
-    <div className="container" style={{ textAlign: "center" }}>
+    <div className="container" style={{ textAlign: "center", padding: "1rem" }}>
       <img
         src={confetti}
         alt="confetti"
